@@ -7,14 +7,6 @@
 
 using namespace std;
 
-#define v std::vector
-#define pb push_back
-#define umap std::unordered_map
-#define uset std::unordered_set
-#define all(A) (A).begin(), (A).end()
-#define ll long long int
-#define ld long double
-
 
 int main(void) {
     std::ios_base::sync_with_stdio(false);
