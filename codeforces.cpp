@@ -1,7 +1,6 @@
 // use "Clang++20 Diagnostics" compiler
 
-#pragma GCC optimize("Ofast,unroll-loops,no-stack-protector,fast-math")
-#pragma GCC target("avx2,abm,fma,bmi,bmi2,lzcnt,popcnt")
+#pragma GCC optimize("Ofast")
 
 #include <bits/stdc++.h>
 
