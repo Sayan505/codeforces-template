@@ -1,5 +1,3 @@
-// use "Clang++20 Diagnostics" compiler
-
 #pragma GCC optimize("Ofast")
 
 #include <bits/stdc++.h>
@@ -12,9 +10,9 @@ int main(void) {
     std::cin.tie(nullptr);
 
 
-    int x;
-    std::cin >> x;
-    std::cout << x;
+    // input parsing
+    vector<string> strs(10);
+    for(int i = 0; i < 10; cin >> strs[i++]);
 
 
     return 0;
