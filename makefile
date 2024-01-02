@@ -19,10 +19,11 @@ build:
 	@printf "Compile...\n"
 	@touch $(IN)
 	$(CXX) $(CXXFLAGS) $(SRC) -o $(BIN)
+	@printf "Compiled successfully!\n"
 
 run:
 	@printf "\nRun:\n./$(BIN)\n"
-	@touch $(IN)	
+	@touch $(IN)
 	@printf "====EXECUTION===================================================================\n"
 	@\time -f '\n====END=========================================================================\nexec. time: %es' ./$(BIN) < $(IN)
 
