@@ -1,17 +1,15 @@
 SRC := codeforces.cpp
 
-# file i/o
 IN  := input.txt
 
 CXX := g++
 
-# use "Clang++20 Diagnostics" compiler
-CXXFLAGS := -Wall					\
-			-Wextra					\
-			-pipe					\
+CXXFLAGS := -pipe					\
 			-std=gnu++20
 
 BIN := out.elf64
+
+
 
 
 all: build run
@@ -24,8 +22,9 @@ build:
 
 run:
 	@printf "\nRun:\n./$(BIN)\n"
-	@touch $(IN)
-	@\time -f '\n\nexec time: %e' ./$(BIN) < $(IN)
+	@touch $(IN)	
+	@printf "====EXECUTION===================================================================\n"
+	@\time -f '\n====END=========================================================================\nexec. time: %es' ./$(BIN) < $(IN)
 
 
 clean:
