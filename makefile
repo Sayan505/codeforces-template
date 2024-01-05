@@ -4,7 +4,8 @@ IN  := input.txt
 
 CXX := g++
 
-CXXFLAGS := -pipe					\
+CXXFLAGS := -O2						\
+			-pipe					\
 			-std=gnu++20
 
 BIN := out.elf64

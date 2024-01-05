@@ -11,8 +11,8 @@ int main(void) {
 
 
     // input parsing
-    vector<string> strs(10);
-    for(int i = 0; i < 10; cin >> strs[i++]);
+    vector<int> nums(10);
+    for(int i = 0; i < 10; cin >> nums[i++]);
 
 
     return 0;
