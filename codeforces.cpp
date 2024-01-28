@@ -1,12 +1,29 @@
 #pragma GCC optimize("O3")
 
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+
+using namespace __gnu_pbds;
+using namespace std;
 
 typedef long double                 ld;
 typedef          long long int     lli;
 typedef unsigned long long int    ulli;
+typedef __gnu_pbds::tree<int, __gnu_pbds::null_type,
+    less<int>, __gnu_pbds::rb_tree_tag,
+    __gnu_pbds::tree_order_statistics_node_update> os_tree;
 
-using namespace std;
+
+
+
+void solve() {
+    int n;
+    cin >> n;
+
+    vector<int> nums(n);
+    for(auto& x : nums) { cin >> x; }
+}
 
 
 int main(void) {
@@ -16,20 +33,9 @@ int main(void) {
     int t;
     cin >> t;
 
-    vector<vector<int>> testcases;
-
     while(t--) {
-        int n;
-        cin >> n;
-
-        vector<int> curr_tc(n);
-
-        for(auto& a : curr_tc) cin >> a;
-
-        testcases.push_back(curr_tc);
+        solve();
     }
-
-
 
 
     return 0;
